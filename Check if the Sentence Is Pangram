@@ -1,0 +1,15 @@
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+       Set<Character> check = new HashSet<>();
+       //put char in HashSet
+       for(int i=0;i<sentence.length();i++){
+           check.add(sentence.charAt(i));
+       }
+       for(int j=0;j<26;j++){
+           char alpha = (char)('a'+j);
+           //왜 contains(alpha) 쓰면 안되는지
+           if(sentence.indexOf(alpha)==-1)
+                return false;
+       }
+       return true;}
+}
