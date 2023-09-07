@@ -1,6 +1,2 @@
-# Leetcode-Algorithm
-### solving leetcode questions using java
+### Solving Algorithm Problems from LeetCode and BaekJoon platform
 
-
-
-Thanks to eliot cho
