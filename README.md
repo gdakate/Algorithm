@@ -1,4 +1,4 @@
-### Solving Algorithm Problems from LeetCode and BaekJoon platform
+### Solving Algorithm from LeetCode and BaekJoon platform
 
 [Algorithm & CS study]
 09.06.2023 ~ 
