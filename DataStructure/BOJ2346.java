@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -8,12 +10,14 @@ public class BOJ2346 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(bf.readLine());
-        Deque<int[]> q = new LinkedList<>();
+
+        Deque<int[]> q = new ArrayDeque<>();
         String[] line = bf.readLine().split(" ");
+
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < num; i++){
-            q.add(new int[]{i + 1, Integer.parseInt(line[i])});  // 풍선 번호와 종이에 적힌 수를 함께 저장
+            q.add(new int[]{i + 1, Integer.parseInt(line[i])});  // 풍선 번호, 종이에 적힌 수
         }
 
         int[] curr = q.poll();
